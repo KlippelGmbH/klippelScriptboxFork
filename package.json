@@ -4,6 +4,13 @@
   "description": "Scriptbox fork with edited usability for local use.",
   "version": "0.0.1",
   "publisher": "KlippelGmbH",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KlippelGmbH/klippelScriptboxFork"
+  },
+  "bugs": {
+    "url": "https://github.com/KlippelGmbH/klippelScriptboxFork/issues"
+  },
   "engines": {
     "vscode": "^1.78.0"
   },
