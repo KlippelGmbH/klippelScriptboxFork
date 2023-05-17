@@ -1,8 +1,9 @@
 {
   "name": "klippel-scriptbox-fork",
-  "displayName": "Klippel-Scriptbox-Fork",
+  "displayName": "Klippel Scriptbox Fork",
   "description": "Scriptbox fork with edited usability for local use.",
   "version": "0.0.1",
+  "publisher": "KlippelGmbH",
   "engines": {
     "vscode": "^1.78.0"
   },
@@ -12,11 +13,34 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "klippel-scriptbox-fork.helloWorld",
-      "title": "Hello World"
-    }]
+    "commands": [
+			{
+				"command": "klippel-scriptbox-fork.createScript",
+				"title": "klippel-scriptbox-fork: Create Script"
+			},
+			{
+				"command": "klippel-scriptbox-fork.editScript",
+				"title": "klippel-scriptbox-fork: Edit Script"
+			},
+			{
+				"command": "klippel-scriptbox-fork.runScript",
+				"title": "klippel-scriptbox-fork: Run Script"
+			},
+			{
+				"command": "klippel-scriptbox-fork.runSelection",
+				"title": "klippel-scriptbox-fork: Eval Selection"
+			},
+			{
+				"command": "klippel-scriptbox-fork.openScratch",
+				"title": "klippel-scriptbox-fork: Open Scratch"
+			}
+		]
   },
+  "extensionDependencies": [
+    "ryuta46.multi-command",
+    "Gruntfuggly.activitusbar",
+    "edonet.vscode-command-runner"
+  ],
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
